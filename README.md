@@ -1,6 +1,6 @@
 ## Funding your Masternode
 
-* First, we will do the initial collateral TX and send exactly 1000 ROCO until block 70000, 2000 ROCO from block 70001 to block 115000, 3000 ROCO from block 115001.
+* First, we will do the initial collateral TX and send exactly 3000 ROCO.
 
   - Open your ROCO wallet and switch to the "Receive" tab.
 
@@ -21,7 +21,7 @@ Generate your Masternode Private Key
 In your wallet, click on Tools icon -> Console and run the following command:
 
 ```bash
-masternode genkey
+createmasternodekey
 ```
 
 Write this down or copy it somewhere safe.
@@ -29,7 +29,7 @@ Write this down or copy it somewhere safe.
 View your Output (Also in the Console):
 
 ```bash
-masternode outputs
+getmasternodeoutputs
 ```
 
 Write this down or copy it somewhere safe.
