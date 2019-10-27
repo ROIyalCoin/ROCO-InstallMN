@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TARBALLURL="https://github.com/ROIyalCoin/ROIyalCoin/releases/download/v1.1.0.2/ubuntu16.04-daemon.zip"
+TARBALLURL="https://github.com/ROIyalCoin/ROIyalCoin/releases/download/v1.2.0.0/ubuntu16.04-daemon.zip"
 TARBALLNAME="ubuntu16.04-daemon.zip"
-ROCOVERSION="1.1.0.2"
+ROCOVERSION="1.2.0.0"
 
 clear
 echo "This script will update your masternode to version $ROCOVERSION"
@@ -19,10 +19,8 @@ unzip $TARBALLNAME
 sudo rm $TARBALLNAME
 yes | sudo cp -rf rocod /usr/local/bin
 yes | sudo cp -rf roco-cli /usr/local/bin
-yes | sudo cp -rf roco-tx /usr/local/bin
 sudo chmod +x /usr/local/bin/rocod
 sudo chmod +x /usr/local/bin/roco-cli
-sudo chmod +x /usr/local/bin/roco-tx
 cd ..
 sed -i '/^addnode/d' ~/.roco/roco.conf
 cat <<EOL >>  ~/.roco/roco.conf
@@ -34,4 +32,4 @@ read -p "Please wait at least 5 minutes for the wallet to load, then press any k
 clear
 echo "Starting masternode..." # TODO: Need to wait for wallet to load before starting...
 roco-cli startmasternode local false
-roco-cli masternode status
+roco-cli getmasternodestatus
