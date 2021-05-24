@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TARBALLURL="https://github.com/ROIyalCoin/ROIyalCoin/releases/download/v1.2.0.0/ubuntu16.04-daemon.zip"
+TARBALLURL="https://github.com/ROIyalCoin/ROIyalCoin/releases/download/v1.3.0.1/ubuntu16.04-daemon.zip"
 TARBALLNAME="ubuntu16.04-daemon.zip"
-ROCOVERSION="1.2.0.0"
+ROCOVERSION="1.3.0.1"
 
 clear
 echo "This script will update your masternode to version $ROCOVERSION"
