@@ -1,6 +1,6 @@
 ## Funding your Masternode
 
-* First, we will do the initial collateral TX and send exactly 3000 ROCO.
+* First, we will do the initial collateral TX and send exactly 10000 ROCO.
 
   - Open your ROCO wallet and switch to the "Receive" tab.
 
